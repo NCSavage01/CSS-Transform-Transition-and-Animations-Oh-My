@@ -21,6 +21,25 @@ body  {
   flex-direction: column;
   justify-content: space-around;
 }
+@keyframes top {
+  0% {}
+  to {}
+}
+
+@keyframes middle {
+  0% {background: rebeccapurple;}
+  100% {background: mediumvioletred;}
+}
+
+@keyframes bottom {
+  from {}
+  to {}
+}
+
+#middle{
+  animation: 4s top;
+}
+
 
 .hamburger div {
   background-color: rebeccapurple;

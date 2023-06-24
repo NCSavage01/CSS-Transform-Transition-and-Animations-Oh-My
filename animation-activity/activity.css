@@ -27,17 +27,21 @@ nav {
   opacity: 1;
 }
 
-@keyframes top {
-  from {}
-  to {}
+@keyframes top{
+  from{transform: rotate(0)}
+  to{transform: translateY(35px) rotate(45deg);}
 }
 
 @keyframes middle {
-  from {}
-  to {}
+ from {opacity: 1}
+ to {opacity: 0;}
 }
 
 @keyframes bottom {
-  from {}
-  to {}
+  from {transform: rotate(0);}
+  to {transform: translateY(-35px) rotate(-45deg);}
+}
+
+#middle{
+  animation: 4s top;
 }
